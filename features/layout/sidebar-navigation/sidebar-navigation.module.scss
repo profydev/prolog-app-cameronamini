@@ -137,5 +137,15 @@
 
   @media (min-width: breakpoint.$desktop) {
     display: flex;
+    display: inline-block; /* Ensure the element can be transformed */
+    transition: transform 0.3s ease; /* Optional: adds a smooth transition */
+  }
+
+  &.isCollapsed {
+    @media (min-width: breakpoint.$desktop) {
+      img {
+        transform: rotate(180deg);
+      }
+    }
   }
 }
