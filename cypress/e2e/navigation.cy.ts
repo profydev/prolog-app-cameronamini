@@ -42,6 +42,11 @@ describe("Sidebar Navigation", () => {
       // check that text is not rendered
       cy.get("nav").contains("Issues").should("not.exist");
     });
+    it("contains a support button", () => {
+      cy.get("nav").contains("Support");
+      //note for johannes: we should probably check that the mailto link is correct but I'm not sure how to do that
+      // cypress times out when clicking the button, I tried to stub window.open but couldn't get it to work
+    });
   });
 
   context("mobile resolution", () => {
