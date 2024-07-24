@@ -9,6 +9,11 @@ export enum ProjectStatus {
   warning = "warning",
   critical = "critical",
 }
+export enum APIProjectStatus {
+  info = "info",
+  warning = "warning",
+  error = "error",
+}
 
 export type Project = {
   id: string;
@@ -16,5 +21,5 @@ export type Project = {
   language: ProjectLanguage;
   numIssues: number;
   numEvents24h: number;
-  status: ProjectStatus;
+  status: APIProjectStatus;
 };
