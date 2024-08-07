@@ -1,7 +1,8 @@
 import { Routes } from "@config/routes";
 import styles from "./index.module.scss";
+import { Hero } from "@features/home/";
 
-const IssuesPage = () => {
+const HomePage = () => {
   return (
     <div>
       <header className={styles.header}>
@@ -9,6 +10,7 @@ const IssuesPage = () => {
         <img src="/icons/logo-large.svg" alt="Prolog logo" />
         <a href={Routes.projects}>Dashboard</a>
       </header>
+      <Hero />
       <button
         className={styles.contactButton}
         onClick={() =>
@@ -24,4 +26,4 @@ const IssuesPage = () => {
   );
 };
 
-export default IssuesPage;
+export default HomePage;
