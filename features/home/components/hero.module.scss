@@ -1,0 +1,50 @@
+@use "@styles/color";
+@use "@styles/font";
+@use "@styles/space";
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: color.$gray-50;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 96px;
+  padding-bottom: 64px;
+}
+
+.header {
+  color: color.$gray-900;
+  margin: 0;
+  text-align: center;
+  font: font.$display-xl-semibold;
+  padding-bottom: 64px;
+}
+
+.subheaderContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.subheader {
+  color: color.$gray-500;
+  text-align: center;
+  margin: 0;
+  font: font.$text-xl-normal;
+}
+
+.heroImage {
+  width: auto;
+  height: auto;
+  margin-bottom: 96px;
+}
